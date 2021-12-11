@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://examplesite.com/"
+baseURL = "https://code-for-hamamatsu.github.io/vaccinecert-faq/"
 # theme
 theme = "dot-hugo"
 # site title
@@ -12,7 +12,6 @@ googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
 # unsafe html
 [markup.goldmark.renderer]
 unsafe = true
-
 
 ############################# Default Parameters ##########################
 [params]
