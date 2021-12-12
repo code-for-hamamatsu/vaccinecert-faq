@@ -90,7 +90,7 @@ DefaultContentLanguage = "ja"
   ################## Japanese navigation #################
   [[Languages.ja.menu.main]]
   name = "Home"
-  url = "/"
+  url = ""
   weight = 1
 
   [[Languages.ja.menu.main]]
@@ -156,7 +156,7 @@ DefaultContentLanguage = "ja"
   ################## english navigation #################
   [[Languages.en.menu.main]]
   name = "Home"
-  url = "/"
+  url = ""
   weight = 1
 
   [[Languages.en.menu.main]]
