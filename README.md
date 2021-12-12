@@ -90,4 +90,6 @@ Pull Request を送る際のブランチは、以下のネーミングルール�
 ## 5. GitHub Pagesへのデプロイ
 main ブランチがアップデートされると、GitHub pagesへデプロイするGithub Action `.github/workflows/gh-pages.yml` があります
 
+## 6. 修正を行う場合の参考ドキュメント
 
+本サイトの修正をするための参考資料は[カスタマイズ参考資料](./FOR_DEVELOPERS.md)にあるので参考にしてください
