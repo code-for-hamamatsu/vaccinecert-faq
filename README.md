@@ -68,8 +68,21 @@ Pull Request を送る際のブランチは、以下のネーミングルール�
 |機能追加系|`feature/#{ISSUE_ID}-#{branch_title_name}`|
 |ホットフィックス系|`fix/#{ISSUE_ID}-#{branch_title_name}`|
 
+### 4.1. 基本的なブランチ
+
+| 目的 | ブランチ | 確認URL | Pull requestsを出せる人 | 備考 |
+| ---- | ---- | ---- | ---- | ---- |
+| 開発/本番 | main | https://code-for-hamamatsu.github.io/vaccinecert-faq/ | 全開発者 | base branch。基本は、この`main`ブランチに Pull Requestを送ってください。 |
+
+### 4.2. システムで利用しているブランチ
+
+| 目的 | ブランチ | 確認URL | 備考 |
+| ---- | -------- | ---- | ---- |
+| 本番サイトHTML | main |  | 静的ビルドされたHTMLが置いてある場所 |
+| ステージングサイト HTML | gh-pages | https://code-for-hamamatsu.github.io/vaccinecert-faq/ | 静的ビルドされたHTMLが置いてある場所 |
 
 ## 5. GitHub Pagesへのデプロイ
 
 main ブランチがアップデートされると、GitHub pagesへデプロイするGithub Action `.github/workflows/gh-pages.yml` があります
+
 
