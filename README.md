@@ -81,8 +81,13 @@ Pull Request を送る際のブランチは、以下のネーミングルール�
 | 本番サイトHTML | main |  | 静的ビルドされたHTMLが置いてある場所 |
 | ステージングサイト HTML | gh-pages | https://code-for-hamamatsu.github.io/vaccinecert-faq/ | 静的ビルドされたHTMLが置いてある場所 |
 
-## 5. GitHub Pagesへのデプロイ
+## 4.3. Issue へのコメントや Pull Request について
+* Issue へのコメントはご自由にどうぞ！新しい質問や提案なども受け付けます。
+* Issue を追加する場合、必ず既に同様の Issue が無いか検索をしてから作成してください。
+* Pull Request を送る場合、必ず対応する Issue 番号を追記してください。単独の Pull Request は受け付けません。
+* improve(改善提案)がついたIssueについては必ず反映できると限りませんのでご了承ください
 
+## 5. GitHub Pagesへのデプロイ
 main ブランチがアップデートされると、GitHub pagesへデプロイするGithub Action `.github/workflows/gh-pages.yml` があります
 
 
