@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  hugo:
+    container_name: vaccinecert-faq-hugo
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ".:/app"
+    entrypoint: bash
+    ports:
+      - "1313:1313"
+    tty: true
+    working_dir: /app
