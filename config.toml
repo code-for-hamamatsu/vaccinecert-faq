@@ -1,4 +1,6 @@
 ################################# Default configuration ###################
+defaultContentLanguage = "ja"
+
 # provide your domain here
 baseURL = "https://code-for-hamamatsu.github.io/vaccinecert-faq/"
 # theme
@@ -58,7 +60,6 @@ name = "Github"
 link = "#"
 
 HasCJKLanguage = true
-DefaultContentLanguage = "ja"
 
 [languages]
   ################################ Japanese Language ######################
