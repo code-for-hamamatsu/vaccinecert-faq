@@ -57,6 +57,10 @@ $ docker-compose build
 $ docker-compose up -d
 $ docker exec -it vaccinecert-faq-hugo sh
 ```
+### 3.3. サイトの表示
+
+ブラウザで http://localhost:1313 を開きます。
+Live Reloadされるのでエディタで修正したものは即時反映されます。
 
 ## 4. ブランチルール
 
