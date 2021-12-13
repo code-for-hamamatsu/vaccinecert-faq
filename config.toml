@@ -29,7 +29,7 @@ author = "Themefisher"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 # customize color
-primary_color = "#02007e"
+primary_color = "#B10020"
 body_color = "#f9f9f9"
 text_color = "#636363"
 text_color_dark = "#242738"
@@ -73,7 +73,7 @@ HasCJKLanguage = true
   [Languages.ja.params.banner]
   title = "ワクチン接種証明アプリFAQ"
   subtitle = "Find advice and answers from our support team fast or get in touch"
-  bg_image = "images/banner.jpg"
+  # bg_image = "images/banner.jpg"
   placeholder = "お知りになりたいことは何ですか？"
 
   # # call to action
