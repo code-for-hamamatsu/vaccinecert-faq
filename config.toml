@@ -37,7 +37,7 @@ white_color = "#ffffff"
 light_color = "#f8f9fa"
 
 # font family
-font_family = "Noto Sans Japanese" # Choose font family from : https://fonts.google.com/
+font_family = "Noto Sans JP" # Choose font family from : https://fonts.google.com/
 
 # contact form action
 contact_form_action = "#" # contact form works with : https://formspree.io
