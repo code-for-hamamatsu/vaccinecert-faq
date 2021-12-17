@@ -1,8 +1,8 @@
 ---
-title: "観光・イベント"
+title: "4_どの市区町村を選んで発行すればよいですか"
 draft: false
 type : "docs"
 weight : 4
 ---
 
-{{< vaccinefaq category="観光・イベント" >}}
+{{< vaccinefaq category="4_どの市区町村を選んで発行すればよいですか" >}}
