@@ -5,7 +5,7 @@ draft: false
 weight : 99
 ---
 
-このサイトはデジタル庁が公開した [新型コロナワクチン接種証明書アプリ](https://www.digital.go.jp/policies/posts/vaccinecert) のオープンデータ[接種証明書アプリFAQ](https://cio.go.jp/vrs_lgov)を利用したFAQサイトです。
+このサイトはデジタル庁が公開した [新型コロナワクチン接種証明書アプリ](https://www.digital.go.jp/policies/posts/vaccinecert) のオープンデータ [接種証明書アプリFAQ](https://cio.go.jp/vrs_lgov) を利用したFAQサイトです。
 
 ### FAQの内容について
 FAQに記載される内容は、デジタル庁から公開された内容でありCode For Hamamatsuの意見、見解を表すものではありません。  
@@ -17,7 +17,7 @@ FAQに記載される内容は、デジタル庁から公開された内容で�
 
 ### 本サイトのライセンス
 本サイトのソースコードは [MITライセンス](https://github.com/code-for-hamamatsu/vaccinecert-faq/blob/main/LICENCE.txt) が適用されます。  
-サイトに対する改善要望等は、GitHub の [Issues](https://github.com/code-for-hamamatsu/vaccinecert-faq/issues) へお寄せください  
+サイトに対する改善要望等は、GitHub の [Issues](https://github.com/code-for-hamamatsu/vaccinecert-faq/issues) へお寄せください。
 
 本サイトは [Hugo](https://gohugo.io/)を用いて作成されており、テーマには[Dot Hugo](https://github.com/themefisher/dot-hugo)を使用しています。  
 本サイトで使用されるFavicon等の画像は利用許諾を得て使用しています。  
