@@ -5,14 +5,13 @@ draft: false
 weight : 99
 ---
 
-このサイトはデジタル庁が公開した [新型コロナワクチン接種証明書アプリ](https://www.digital.go.jp/policies/posts/vaccinecert) のFAQオープンデータを
-利用したFAQサイトです。
+このサイトはデジタル庁が公開した [新型コロナワクチン接種証明書アプリ](https://www.digital.go.jp/policies/posts/vaccinecert) のオープンデータ[接種証明書アプリFAQ](https://cio.go.jp/vrs_lgov)を利用したFAQサイトです。
 
 ### FAQの内容について
 FAQに記載される内容は、デジタル庁から公開された内容でありCode For Hamamatsuの意見、見解を表すものではありません。  
 本サイトで表示されるFAQの内容の引用、転載、二次利用についてはオープンデータの利用条件に従うものとします。  
 本サイトに表示されるFAQの内容についての不明点・疑問点等は、こちらにお問い合わせください。
-- 〇〇〇〇〇〇〇
+- [新型コロナワクチン接種証明書アプリ お問い合わせ先（デジタル庁）](https://www.digital.go.jp/policies/vaccinecert/contact)
 
 
 
