@@ -90,14 +90,14 @@ HasCJKLanguage = true
 
   ################## Japanese navigation #################
   [[Languages.ja.menu.main]]
-  name = "Home"
-  url = ""
+  name = "About"
+  url = "about"
   weight = 1
 
-  [[Languages.ja.menu.main]]
-  name = "Faq"
-  url = "faq"
-  weight = 2
+  # [[Languages.ja.menu.main]]
+  # name = "Faq"
+  # url = "faq"
+  # weight = 2
 
   # [[Languages.ja.menu.main]]
   # name = "contact"
