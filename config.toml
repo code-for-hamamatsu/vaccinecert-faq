@@ -72,7 +72,7 @@ HasCJKLanguage = true
   # banner
   [Languages.ja.params.banner]
   title = "ワクチン接種証明アプリFAQ"
-  subtitle = "Find advice and answers from our support team fast or get in touch"
+  # subtitle = ""
   # bg_image = "images/banner.jpg"
   placeholder = "お知りになりたいことは何ですか？"
 
