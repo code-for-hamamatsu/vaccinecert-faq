@@ -8,8 +8,10 @@
     </a>
   </div>
   <div id="{{ $faq.質問 | sha1 }}" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color pt-0" style="white-space:pre-wrap;">{{ $faq.回答 }}</div>
-    <div class="card-footer rounded-0 bg-white border p-0 border-0" style="text-align: right;">最終更新日：{{ slicestr $faq.更新日 0 4 }}年{{ slicestr $faq.更新日 4 5 }}月{{ slicestr $faq.更新日 6 }}日　　</div>
+    <div class="card-body font-secondary text-color pt-0" style="white-space:pre-wrap; margin-bottom: 0px;">{{ $faq.回答 }}</div>
+    <div class="card-footer rounded-0 bg-white border p-0 border-0" style="text-align: right; margin-bottom: 0px; margin-right: 20px;">
+      最終更新日：{{ slicestr $faq.更新日 0 4 }}年{{ slicestr $faq.更新日 4 5 }}月{{ slicestr $faq.更新日 6 }}日&nbsp;
+    </div>
   </div>
   {{ .Inner }}
 </div>
