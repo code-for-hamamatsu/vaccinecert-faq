@@ -5,16 +5,22 @@ draft: false
 weight : 99
 ---
 
-このサイトはデジタル庁が公開した [新型コロナワクチン接種証明書アプリ](https://www.digital.go.jp/policies/posts/vaccinecert) のオープンデータ [接種証明書アプリFAQ](https://cio.go.jp/vrs_lgov) を利用した、有志により運営されてるFAQサイトです。
+このサイトはデジタル庁が公開した [新型コロナワクチン接種証明書アプリ](https://www.digital.go.jp/policies/posts/vaccinecert) のオープンデータ 接種証明書アプリFAQ を利用した、FAQサイトです。
+運営はシビックテック有志で行っています。
 
 ### FAQの内容について
-FAQに記載される内容は、デジタル庁から公開された内容でありCode For Hamamatsuの意見、見解を表すものではありません。  
-本サイトで表示されるFAQの内容の引用、転載、二次利用についてはオープンデータの利用条件に従うものとします。  
 
-本サイトに表示されるFAQの内容についての不明点・疑問点等は、こちらにお問い合わせください。
-- [新型コロナワクチン接種証明書アプリ お問い合わせ先（デジタル庁）](https://www.digital.go.jp/policies/vaccinecert/contact)
+FAQの内容はデジタル庁から公開されたオープンデータの内容であり、サイトを運営する有志の意見や見解ではありません。
 
-サイトに対する改善要望等は、GitHub の [Issues](https://github.com/code-for-hamamatsu/vaccinecert-faq/issues) へお寄せください。
+【参照先オープンデータ】
+- [https://cio.go.jp/sites/default/files/uploads/documents/VaccinecertFAQ.csv](https://cio.go.jp/sites/default/files/uploads/documents/VaccinecertFAQ.csv)
+
+ <!-- 
+本サイトに表示されるFAQの内容についての不明点・疑問点等は、こちらのフォームからデジタル庁にお問い合わせください。
+- [新型コロナワクチン接種証明書アプリ お問い合わせ先（デジタル庁）](https://www.digital.go.jp/policies/vaccinecert/contact) 
+ -->
+
+サイトに対する改善要望等は、GitHubの [Issues](https://github.com/code-for-hamamatsu/vaccinecert-faq/issues) へお寄せください。
 
 ### 本サイトのライセンス
 本サイトのソースコードは [MITライセンス](https://github.com/code-for-hamamatsu/vaccinecert-faq/blob/main/LICENCE.txt) が適用されます。  

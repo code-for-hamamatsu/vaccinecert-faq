@@ -8,7 +8,7 @@ theme = "dot-hugo"
 # site title
 title = "ワクチン接種証明書アプリFAQ"
 # disable language
-disableLanguages = []
+disableLanguages = ["en"]
 # google analytics
 googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
 # unsafe html
@@ -72,7 +72,7 @@ HasCJKLanguage = true
   # banner
   [Languages.ja.params.banner]
   title = "ワクチン接種証明書アプリFAQ"
-  subtitle = "Find advice and answers from our support team fast or get in touch"
+  subtitle = ""
   # bg_image = "images/banner.jpg"
   placeholder = "お知りになりたいことは何ですか？"
 
