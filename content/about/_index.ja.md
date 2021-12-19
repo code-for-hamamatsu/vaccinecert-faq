@@ -15,8 +15,10 @@ FAQの内容はデジタル庁から公開されたオープンデータの内�
 【参照先オープンデータ】
 - [https://cio.go.jp/sites/default/files/uploads/documents/VaccinecertFAQ.csv](https://cio.go.jp/sites/default/files/uploads/documents/VaccinecertFAQ.csv)
 
+ <!-- 
 本サイトに表示されるFAQの内容についての不明点・疑問点等は、こちらのフォームからデジタル庁にお問い合わせください。
-- [新型コロナワクチン接種証明書アプリ お問い合わせ先（デジタル庁）](https://www.digital.go.jp/policies/vaccinecert/contact)
+- [新型コロナワクチン接種証明書アプリ お問い合わせ先（デジタル庁）](https://www.digital.go.jp/policies/vaccinecert/contact) 
+ -->
 
 サイトに対する改善要望等は、GitHubの [Issues](https://github.com/code-for-hamamatsu/vaccinecert-faq/issues) へお寄せください。
 
