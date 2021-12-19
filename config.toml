@@ -24,7 +24,7 @@ logo_white = ""
 # when logo is empty, it will shown your site title
 
 # OpenGraph / Twitter Card metadata
-description = "This is meta description"
+description = "このサイトはデジタル庁が公開した新型コロナワクチン接種証明書アプリのオープンデータ接種証明書アプリFAQを利用したFAQサイトです。"
 author = "Themefisher"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
