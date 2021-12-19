@@ -27,7 +27,7 @@ logo_white = ""
 title = "ワクチン接種証明書アプリFAQ"
 description = "このサイトはデジタル庁が公開した新型コロナワクチン接種証明書アプリのオープンデータ接種証明書アプリFAQを利用したFAQサイトです。"
 author = "Themefisher"
-images = ["images/icon.jpg"] # this image will be used as fallback if a page has no image of its own
+image = "images/icon.jpg" # this image will be used as fallback if a page has no image of its own
 
 # customize color
 primary_color = "#B10020"
