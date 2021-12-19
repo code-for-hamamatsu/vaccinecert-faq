@@ -8,7 +8,7 @@
     </a>
   </div>
   <div id="{{ $faq.質問 | sha1 }}" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color pt-0">{{ $faq.回答 }}</div>
+    <div class="card-body font-secondary text-color pt-0" style="white-space:pre-wrap;">{{ $faq.回答 }}</div>
   </div>
   {{ .Inner }}
 </div>
