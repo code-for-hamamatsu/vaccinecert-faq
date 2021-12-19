@@ -6,7 +6,7 @@ baseURL = "https://code-for-hamamatsu.github.io/vaccinecert-faq/"
 # theme
 theme = "dot-hugo"
 # site title
-title = "ワクチン接種証明"
+title = "ワクチン接種証明書アプリFAQ"
 # disable language
 disableLanguages = ["en"]
 # google analytics
@@ -71,8 +71,8 @@ HasCJKLanguage = true
 
   # banner
   [Languages.ja.params.banner]
-  title = "ワクチン接種証明アプリFAQ"
-  # subtitle = ""
+  title = "ワクチン接種証明書アプリFAQ"
+  subtitle = ""
   # bg_image = "images/banner.jpg"
   placeholder = "お知りになりたいことは何ですか？"
 
