@@ -67,7 +67,7 @@ HasCJKLanguage = true
   languageName = "日本語"
   languageCode = "ja-jp"
   weight = 1
-  copyright = "Copyright &copy; 2021 a Hugo theme by [Gethugothemes](https://gethugothemes.com/)"
+  copyright = "Copyright &copy; 2021 Code For Hamamatsu"
 
   # banner
   [Languages.ja.params.banner]
