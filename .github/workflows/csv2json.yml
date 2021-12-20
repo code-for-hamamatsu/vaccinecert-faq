@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r production/tool/data-converter/requirements.txt -t production/tool/data-converter
       - name: Run python script
-          run: python -B production/tool/data-converter/main.py > production/data/faq/faq.json
+          run: python3 -B production/tool/data-converter/main.py > production/data/faq/faq.json
           
       - name: Create Pull Request main
         uses: peter-evans/create-pull-request@v3
