@@ -49,6 +49,7 @@ def main():
         print(json.dumps(data_json, ensure_ascii=False, indent=2))
     except Exception as e:
         logger.exception(e)
+        raise e
 
 if __name__ == '__main__':
     main()
