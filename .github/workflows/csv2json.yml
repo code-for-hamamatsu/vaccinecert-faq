@@ -5,14 +5,14 @@ env:
   TZ: Asia/Tokyo
 on:
   schedule:
-    - cron:  '20 13 * * *'
+    - cron:  '25 13 * * *'
 jobs:
   update_data:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: feature/issue-11-csv2json
+          ref: main
           path: production
 
       - name: Setup python
@@ -32,6 +32,6 @@ jobs:
           path: production
           commit-message: BOT; UPDATE DATA
           title: BOT; UPDATE DATA to main
-          base: feature/issue-11-csv2json
-          branch: data-bot/feature/issue-11-csv2json
+          base: main
+          branch: data-bot/main
           labels: auto_merge
