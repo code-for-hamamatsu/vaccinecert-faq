@@ -1,0 +1,37 @@
+# This is a workflow to create data.json and deploy with Actions
+
+name: data.json news.json builder and deploy
+env:
+  TZ: Asia/Tokyo
+on:
+  schedule:
+    - cron:  '15 13 * * *'
+jobs:
+  update_data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: feature/issue-11-csv2json
+          path: production
+
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+          
+      - name: Install dependencies
+        run: pip install -r production/tool/data-converter/requirements.txt -t production/tool/data-converter
+      - name: Run python script
+          run: python -B production/tool/data-converter/main.py > production/data/faq/faq.json
+          
+      - name: Create Pull Request main
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.TOKEN_GITHUB }}
+          path: production
+          commit-message: BOT; UPDATE DATA
+          title: BOT; UPDATE DATA to main
+          base: feature/issue-11-csv2json
+          branch: data-bot/feature/issue-11-csv2json
+          labels: auto_merge
