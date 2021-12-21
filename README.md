@@ -72,8 +72,8 @@ Pull Request を送る際のブランチは、以下のネーミングルール�
 
 | 種類 | ブランチのネーミングルール |
 | ---- | ---- |
-|機能追加系|`feature/#{ISSUE_ID}-#{branch_title_name}`|
-|ホットフィックス系|`fix/#{ISSUE_ID}-#{branch_title_name}`|
+|機能追加系|`feature/{ISSUE_ID}-{branch_title_name}`|
+|ホットフィックス系|`fix/{ISSUE_ID}-{branch_title_name}`|
 
 ### 4.1. 基本的なブランチ
 
