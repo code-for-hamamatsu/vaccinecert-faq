@@ -1,11 +1,33 @@
 {{ "<!-- banner -->" | safeHTML }}
-<div class="container section">
+<div class="container section" style="padding-bottom: 24px;">
 	<div class="row">
 		<div class="col-lg-8 text-center mx-auto">
 			<h1 class="text-white mb-3">{{ .Site.Params.banner.title | markdownify }}</h1>
 			<p class="text-white mb-4">{{ .Site.Params.banner.subtitle | markdownify }}</p>
-			<!-- <div class="position-relative">
-				<input id="search" class="form-control" placeholder="{{ .Site.Params.banner.placeholder }}">
+			<div class="position-relative">
+				<form>
+					<input id="searchKeyword" class="form-control" style="margin-top: 16px;" placeholder="検索キーワードを入れてください">
+					<i class="ti-search search-icon"></i>
+					<input id="searchButton" type="submit" value="" style="color: transparent; background-color: transparent; border: transparent;">
+				</form>
+
+				<script>
+					const SEARCH_URL = '/search/';
+
+					window.addEventListener('DOMContentLoaded', () => {
+						const searchButton = document.getElementById('searchButton');
+						const searchKeyword = document.getElementById('searchKeyword');
+
+						// 検索ボタンのクリックで検索ページへジャンプ
+						searchButton.addEventListener('click', e => {
+							e.preventDefault();  // Prevent default form's behavior
+							const query = searchKeyword.value;
+							const url = query ? SEARCH_URL + '#' + query : SEARCH_URL;
+							location.href = url;
+						});
+					});
+				</script>
+				<!-- <input id="search" class="form-control" placeholder="{{ .Site.Params.banner.placeholder }}">
 				<i class="ti-search search-icon"></i> -->
 				<!-- Javascript -->
 				<!-- {{ $currentNode := . }}
@@ -31,8 +53,8 @@
 						.appendTo( ul );
 					};
 					});
-				</script>
-			</div> -->
+				</script> -->
+			</div>
 		</div>
 	</div>
 </div>
