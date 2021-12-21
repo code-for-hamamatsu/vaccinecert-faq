@@ -1,8 +1,8 @@
 ---
-title: "検索"
+title: "全てのカテゴリから検索"
 draft: false
 ---
-<input id = "query" onkeyup="search(this.value)" size="25" autocomplete="off" autofocus placeholder="キーワードを入れてください" />
+<input id = "query" onkeyup="search(this.value)" size="30" autocomplete="off" autofocus placeholder="検索キーワードを入れてください" />
 
 <script>
     // 検索
