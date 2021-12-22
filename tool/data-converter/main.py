@@ -6,6 +6,7 @@ from retry import retry
 import requests
 import pandas as pd
 import io
+import re
 
 import logging
 logger = logging.getLogger()
@@ -35,13 +36,31 @@ def convert_to_json_data(data_csv):
             'カテゴリ名': list_category[n], 
             'カテゴリ内No': str(list_subno[n]), 
             '質問': list_q[n], 
-            '回答': list_a[n], 
+            '回答': convert_answer(list_a[n]), 
             '更新日': str(list_updated[n])
         }
         results_json.append(keyvalue)
         
     return results_json
-    
+
+def convert_answer(text):
+    text = replace_parentheses_enclosing_url_to_halfwidth(text)
+    return text
+
+# URLを囲む全角カッコを半角にする
+# (マークダウンでリンクと認識させるため)
+def replace_parentheses_enclosing_url_to_halfwidth(text):
+    ary = re.findall('https?://[\w/:%#\$&\?\(\)~\.=\+\-]+', text)
+    if ary == None or len(ary) == 0 or text.find('（') < 0:
+        return text
+
+    for item in ary:
+        before = '（' + item + '）'
+        after  = ' (' + item + ') '  # 見栄えのために前後に半角スペースを付与
+        text   = text.replace(before, after)
+
+    return text
+
 def main():
     try:
         data_csv = get_csv_data(CSV_ADDRESS)
