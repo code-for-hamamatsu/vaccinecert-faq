@@ -156,7 +156,7 @@
     "カテゴリ名": "3_このような場合は発行できますか",
     "カテゴリ内No": "6",
     "質問": "マイナンバーカードに旧姓併記がある場合、アプリで接種証明書は発行できますか。",
-    "回答": "近日中に対応予定です。\n現時点では、マイナンバーカードに旧姓併記がある場合は接種証明書の発行はできません。「マイナンバーカードに旧姓併記がある」とは、次を指します。\n・氏名欄に「田中[佐藤]　花子」などと括弧書きで旧姓が記載されている。\n・券面右下の追記欄に「旧氏　佐藤」や「旧氏記載　田中[佐藤]　花子」などと記載されている。\n(参考)旧姓（旧氏）併記に関するリーフレット：総務省ホームページ（https://www.soumu.go.jp/main_content/000625549.pdf）\n\nこれらの場合以外は、旧姓併記にあたらないので、アプリで発行可能です。\nなお、市区町村窓口等で発行する紙の接種証明書については、マイナンバーカードに旧姓併記がある場合も発行可能です。申請方法は各市区町村へお問い合わせください。",
+    "回答": "近日中に対応予定です。\n現時点では、マイナンバーカードに旧姓併記がある場合は接種証明書の発行はできません。「マイナンバーカードに旧姓併記がある」とは、次を指します。\n・氏名欄に「田中[佐藤]　花子」などと括弧書きで旧姓が記載されている。\n・券面右下の追記欄に「旧氏　佐藤」や「旧氏記載　田中[佐藤]　花子」などと記載されている。\n(参考)旧姓（旧氏）併記に関するリーフレット：総務省ホームページ (https://www.soumu.go.jp/main_content/000625549.pdf) \n\nこれらの場合以外は、旧姓併記にあたらないので、アプリで発行可能です。\nなお、市区町村窓口等で発行する紙の接種証明書については、マイナンバーカードに旧姓併記がある場合も発行可能です。申請方法は各市区町村へお問い合わせください。",
     "更新日": "20211220"
   },
   {
@@ -220,7 +220,7 @@
     "カテゴリ名": "4_どの市区町村を選んで発行すればよいですか",
     "カテゴリ内No": "2",
     "質問": "自分が接種時に住んでいた市区町村が、アプリでの接種証明書の発行を開始しているかどうか知りたいです。",
-    "回答": "本アプリでの接種証明書の発行に対応している市区町村は以下のファイルにてご確認ください。\n・北海道地方、東北地方（https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list1_hokkaido-tohoku.pdf）\n・関東地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list2_kanto.pdf）\n・中部地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list3_chubu.pdf）\n・近畿地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list4_kinki.pdf）\n・中国地方、四国地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list5_chugoku-shikoku.pdf）\n・九州地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list6_kyushu.pdf）",
+    "回答": "本アプリでの接種証明書の発行に対応している市区町村は以下のファイルにてご確認ください。\n・北海道地方、東北地方 (https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list1_hokkaido-tohoku.pdf) \n・関東地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list2_kanto.pdf）\n・中部地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list3_chubu.pdf）\n・近畿地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list4_kinki.pdf）\n・中国地方、四国地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list5_chugoku-shikoku.pdf）\n・九州地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list6_kyushu.pdf）",
     "更新日": "20211220"
   },
   {
@@ -252,7 +252,7 @@
     "カテゴリ名": "5_アプリでうまく発行できません",
     "カテゴリ内No": "1",
     "質問": "マイナンバーカードをうまく読み取れません。また、読み取り位置がわかりません。",
-    "回答": "機種ごとの読み取り位置などについて、以下のページで詳しくご紹介しています。\n・iPhoneの方：iPhone マイナンバーカードの読み取り方法（マイナポイント事務局ホームページ）（https://mynumbercard.point.soumu.go.jp/flow/mykey-get/howtoread/iphonefaq.html）\n・Androidの方：機種ごとのカード読み取り位置（マイナポイント事務局ホームページ）（https://mynumbercard.point.soumu.go.jp/flow/mykey-get/howtoread/androidfaq.html#position）\n\nマイナンバーカードの読み取りについては、特に以下にご留意ください。\n・読み取り完了までスマートフォンとマイナンバーカードをぴったりと密着させてください\n・読み取り完了までカードを動かさないでください。\n・マイナンバーカードを金属製の机に置いた場合、正確に読み取れません。\n・カバー類を外すと読み取りやすくなる場合があります。反応が悪い場合はカバーを外してお試しください。\n・充電やイヤホン等でケーブルを接続している場合、読み取れないことがあります。\n・Androidの場合は、NFC／おさいふケータイの機能をONにしてください。",
+    "回答": "機種ごとの読み取り位置などについて、以下のページで詳しくご紹介しています。\n・iPhoneの方：iPhone マイナンバーカードの読み取り方法（マイナポイント事務局ホームページ） (https://mynumbercard.point.soumu.go.jp/flow/mykey-get/howtoread/iphonefaq.html) \n・Androidの方：機種ごとのカード読み取り位置（マイナポイント事務局ホームページ） (https://mynumbercard.point.soumu.go.jp/flow/mykey-get/howtoread/androidfaq.html#position) \n\nマイナンバーカードの読み取りについては、特に以下にご留意ください。\n・読み取り完了までスマートフォンとマイナンバーカードをぴったりと密着させてください\n・読み取り完了までカードを動かさないでください。\n・マイナンバーカードを金属製の机に置いた場合、正確に読み取れません。\n・カバー類を外すと読み取りやすくなる場合があります。反応が悪い場合はカバーを外してお試しください。\n・充電やイヤホン等でケーブルを接続している場合、読み取れないことがあります。\n・Androidの場合は、NFC／おさいふケータイの機能をONにしてください。",
     "更新日": "20211216"
   },
   {
@@ -300,7 +300,7 @@
     "カテゴリ名": "5_アプリでうまく発行できません",
     "カテゴリ内No": "7",
     "質問": "自治体を選択して接種記録を検索すると、「選択された市区町村では、まだアプリでの発行を受付開始していません。」と表示されます。どうすれば良いですか。",
-    "回答": "選択された市区町村が受付を開始するまで、今しばらくお待ちください。\n本アプリでの接種証明書の発行に対応している市区町村は以下のファイルにてご確認ください。\n・北海道地方、東北地方（https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list1_hokkaido-tohoku.pdf）\n・関東地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list2_kanto.pdf）\n・中部地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list3_chubu.pdf）\n・近畿地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list4_kinki.pdf）\n・中国地方、四国地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list5_chugoku-shikoku.pdf）\n・九州地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list6_kyushu.pdf）",
+    "回答": "選択された市区町村が受付を開始するまで、今しばらくお待ちください。\n本アプリでの接種証明書の発行に対応している市区町村は以下のファイルにてご確認ください。\n・北海道地方、東北地方 (https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list1_hokkaido-tohoku.pdf) \n・関東地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list2_kanto.pdf）\n・中部地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list3_chubu.pdf）\n・近畿地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list4_kinki.pdf）\n・中国地方、四国地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list5_chugoku-shikoku.pdf）\n・九州地方(https://cio.go.jp/sites/default/files/uploads/documents/digital/vaccinecert_list6_kyushu.pdf）",
     "更新日": "20211220"
   },
   {
@@ -380,7 +380,7 @@
     "カテゴリ名": "7_接種証明書の利用について",
     "カテゴリ内No": "1",
     "質問": "接種証明書アプリはどこで使えますか。",
-    "回答": "アプリでは、日本国内用と海外用の接種証明書が発行できます。\n海外用の接種証明書の利用が可能な対象国・地域については、適宜、渡航先政府のホームページ等を参照ください。外務省の ウェブサイトにおいて、適時最新情報を提供しています。\n・海外渡航用の新型コロナワクチン接種証明書が使用可能な国・地域一覧：外務省ホームページ（https://www.anzen.mofa.go.jp/covid19/certificationlist.html）",
+    "回答": "アプリでは、日本国内用と海外用の接種証明書が発行できます。\n海外用の接種証明書の利用が可能な対象国・地域については、適宜、渡航先政府のホームページ等を参照ください。外務省の ウェブサイトにおいて、適時最新情報を提供しています。\n・海外渡航用の新型コロナワクチン接種証明書が使用可能な国・地域一覧：外務省ホームページ (https://www.anzen.mofa.go.jp/covid19/certificationlist.html) ",
     "更新日": "20211213"
   },
   {
@@ -420,7 +420,7 @@
     "カテゴリ名": "7_接種証明書の利用について",
     "カテゴリ内No": "6",
     "質問": "海外用の接種証明書を提示すると、どのような防疫上の措置が緩和されるのですか。",
-    "回答": "海外用の接種証明書による具体的な緩和措置は、国・地域にとって異なります。一般論でいえば、入国時の隔離期間の短縮又は免除や出発前PCR検査陰性証明の提出および到着時のPCR検査の免除といった措置が考えられます。具体的な緩和措置については、外務省ホームページ（https://www.anzen.mofa.go.jp/covid19/certificationlist.html）から適時情報提供されます。",
+    "回答": "海外用の接種証明書による具体的な緩和措置は、国・地域にとって異なります。一般論でいえば、入国時の隔離期間の短縮又は免除や出発前PCR検査陰性証明の提出および到着時のPCR検査の免除といった措置が考えられます。具体的な緩和措置については、外務省ホームページ (https://www.anzen.mofa.go.jp/covid19/certificationlist.html) から適時情報提供されます。",
     "更新日": "20211216"
   },
   {
@@ -428,7 +428,7 @@
     "カテゴリ名": "7_接種証明書の利用について",
     "カテゴリ内No": "7",
     "質問": "接種証明書は日本への帰国時にも利用できますか。",
-    "回答": "2021年10月1日から利用可能となりました。接種証明書による緩和措置の実施状況は随時変更されうるものですので、詳細は厚労省ホームページ（https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00209.html）を参照ください。",
+    "回答": "2021年10月1日から利用可能となりました。接種証明書による緩和措置の実施状況は随時変更されうるものですので、詳細は厚労省ホームページ (https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000121431_00209.html) を参照ください。",
     "更新日": "20211216"
   },
   {
@@ -500,7 +500,7 @@
     "カテゴリ名": "9_アプリの機能について",
     "カテゴリ内No": "5",
     "質問": "マイナンバーカードのどのような情報を利用しますか。",
-    "回答": "本アプリでは、マイナンバーカードの券面事項入力補助APに登録されている、マイナンバー、氏名、生年月日、住所、性別を読み取ります。氏名、生年月日以外については、発行手続きが終わると破棄され、保存されません。それらの情報の利用用途等の詳しい情報は、アプリの利用規約に記載しています。\n・利用規約（https://vc.vrs.digital.go.jp/vpa/eula.html）",
+    "回答": "本アプリでは、マイナンバーカードの券面事項入力補助APに登録されている、マイナンバー、氏名、生年月日、住所、性別を読み取ります。氏名、生年月日以外については、発行手続きが終わると破棄され、保存されません。それらの情報の利用用途等の詳しい情報は、アプリの利用規約に記載しています。\n・利用規約 (https://vc.vrs.digital.go.jp/vpa/eula.html) ",
     "更新日": "20211216"
   },
   {
@@ -508,7 +508,7 @@
     "カテゴリ名": "9_アプリの機能について",
     "カテゴリ内No": "6",
     "質問": "マイナンバーカードから取得されたマイナンバーはどのように利用されますか。",
-    "回答": "ワクチン接種記録システム（VRS）よりご自身の接種記録を取得するために、マイナンバーを利用しています。接種記録を取得後はマイナンバーカードから取得したマイナンバーは破棄され、保存されません。\n利用用途等の詳しい情報は、アプリの利用規約に記載しています。\n・利用規約（https://vc.vrs.digital.go.jp/vpa/eula.html）",
+    "回答": "ワクチン接種記録システム（VRS）よりご自身の接種記録を取得するために、マイナンバーを利用しています。接種記録を取得後はマイナンバーカードから取得したマイナンバーは破棄され、保存されません。\n利用用途等の詳しい情報は、アプリの利用規約に記載しています。\n・利用規約 (https://vc.vrs.digital.go.jp/vpa/eula.html) ",
     "更新日": "20211216"
   },
   {
@@ -532,7 +532,7 @@
     "カテゴリ名": "10_その他",
     "カテゴリ内No": "3",
     "質問": "1回目を海外、２回目を国内で接種を受けたのですが、発行は可能ですか。また、有効性についてはどうなりますか。",
-    "回答": "証明書の発行は可能ですが、ご質問にある「２回目の国内での接種」の記録のみ記載された証明書が発行されます。海外で発行された証明書をお持ちの場合、それぞれ別々の証明書になります。ただし、この場合のように、別々の発行主体による証明書が全体として有効かどうかについては、提示する相手国の判断となります。外務省HPから発表している「海外渡航用の新型コロナワクチン接種証明書が使用可能な国・地域」（https://www.anzen.mofa.go.jp/covid19/certificationlist.html）は、日本で予防接種法に基づき2回の接種を受けた場合を示していますので注意が必要です。",
+    "回答": "証明書の発行は可能ですが、ご質問にある「２回目の国内での接種」の記録のみ記載された証明書が発行されます。海外で発行された証明書をお持ちの場合、それぞれ別々の証明書になります。ただし、この場合のように、別々の発行主体による証明書が全体として有効かどうかについては、提示する相手国の判断となります。外務省HPから発表している「海外渡航用の新型コロナワクチン接種証明書が使用可能な国・地域」 (https://www.anzen.mofa.go.jp/covid19/certificationlist.html) は、日本で予防接種法に基づき2回の接種を受けた場合を示していますので注意が必要です。",
     "更新日": "20211216"
   },
   {
@@ -540,7 +540,7 @@
     "カテゴリ名": "10_その他",
     "カテゴリ内No": "4",
     "質問": "在日米軍で勤務しており、米軍により接種を受けたのですが、接種証明書は発行されますか。",
-    "回答": "本アプリでは発行できません。\n在日米軍によるワクチン接種を受けた在日米軍従業員に対しては、防衛省が接種証明書を発行しております。\n詳細は防衛省にお問い合わせください。\n・在日米軍によるワクチン接種を受けた在日米軍従事員への接種証明書発行について（https://www.mod.go.jp/j/approach/zaibeigun/stuff/zaibeigun_seshushoumei.html）",
+    "回答": "本アプリでは発行できません。\n在日米軍によるワクチン接種を受けた在日米軍従業員に対しては、防衛省が接種証明書を発行しております。\n詳細は防衛省にお問い合わせください。\n・在日米軍によるワクチン接種を受けた在日米軍従事員への接種証明書発行について (https://www.mod.go.jp/j/approach/zaibeigun/stuff/zaibeigun_seshushoumei.html) ",
     "更新日": "20211216"
   },
   {
@@ -548,7 +548,7 @@
     "カテゴリ名": "10_その他",
     "カテゴリ内No": "5",
     "質問": "海外に在留しており、一時帰国で接種を受ける予定なのですが、接種証明書は発行されますか。",
-    "回答": "海外在留邦人等向けのワクチン接種事業での接種については、本アプリ及び市区町村では接種証明書を発行することができません。外務省にて証明書を発行可能ですので、詳細は外務省にお問い合わせください。\n・日本での新型コロナウイルス・ワクチン接種を希望する海外在留邦人等の皆様へのお知らせ（https://www.anzen.mofa.go.jp/covid19/vaccine.html）",
+    "回答": "海外在留邦人等向けのワクチン接種事業での接種については、本アプリ及び市区町村では接種証明書を発行することができません。外務省にて証明書を発行可能ですので、詳細は外務省にお問い合わせください。\n・日本での新型コロナウイルス・ワクチン接種を希望する海外在留邦人等の皆様へのお知らせ (https://www.anzen.mofa.go.jp/covid19/vaccine.html) ",
     "更新日": "20211216"
   },
   {
@@ -564,7 +564,7 @@
     "カテゴリ名": "10_その他",
     "カテゴリ内No": "7",
     "質問": "ワクチンの治験に参加して承認前のワクチンの接種を受けたのですが、接種証明書は発行されますか。",
-    "回答": "新型コロナウイルス感染症予防接種の治験による接種については、本アプリ及び市区町村では接種証明書を発行することができません。厚生労働省において証明書を発行可能ですので、詳細は厚生労働省にお問い合わせください。\n・ワクチンの治験参加者における海外渡航用の新型コロナウイルスワクチン接種証明書について（https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/vaccine_certificate_00001.html）",
+    "回答": "新型コロナウイルス感染症予防接種の治験による接種については、本アプリ及び市区町村では接種証明書を発行することができません。厚生労働省において証明書を発行可能ですので、詳細は厚生労働省にお問い合わせください。\n・ワクチンの治験参加者における海外渡航用の新型コロナウイルスワクチン接種証明書について (https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/vaccine_certificate_00001.html) ",
     "更新日": "20211216"
   }
 ]
