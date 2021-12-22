@@ -4,9 +4,14 @@ draft: false
 ---
 <input id = "query" onkeyup="location.replace('#' + this.value)" style="width: 90%;" autocomplete="off" autofocus placeholder="検索キーワードを入れてください" />
 
+<div id = "result">
+    <span id ="count">0</span> 件の質問・回答が見つかりました
+</div>
+
 <script>
     // 検索
     function search(query) {
+        var count = 0;
         $(".card").each(function(i, elem) {
             var question = $(elem).find("span").text().toLowerCase();
             var answer = $(elem).find(".card-body").text().toLowerCase();
@@ -14,8 +19,10 @@ draft: false
                 $(elem).css("display", "none");
             } else {
                 $(elem).css("display", "block");
+                count++;
             }
         })
+        $("#result #count").text(count);
     }
     // ハッシュフラグメントの値で検索を実行
     function searchWithHash() {
