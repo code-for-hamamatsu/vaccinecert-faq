@@ -67,12 +67,14 @@
             {{ end }}
             {{ end }}
 
+            {{ if ne .Title "全てのカテゴリから検索" }}
             {{with ($.Scratch.Get "prevPage")}}
             <a class="nav nav-prev" href="{{.Permalink }}" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">{{.Title}}</span></a>
             {{end}}
             {{with ($.Scratch.Get "nextPage")}}
             <a class="nav nav-next" href="{{.Permalink }}" aria-label="Previous page" > <span class="d-none d-md-block">{{.Title}}</span><i class="ti-arrow-right ml-2"></i></a>
             {{end}}
+            {{ end }}
           </nav>
         </div>
       </div>
