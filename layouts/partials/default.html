@@ -67,12 +67,16 @@
             {{ end }}
             {{ end }}
 
-            {{ if ne .Title "全てのカテゴリから検索" }}
-            {{with ($.Scratch.Get "prevPage")}}
-            <a class="nav nav-prev" href="{{.Permalink }}" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">{{.Title}}</span></a>
+            {{ if eq .Type "docs" }}
+            {{with .NextInSection}}
+            <a class="nav nav-prev" href="{{.Permalink }}" aria-label="Next page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">{{.Title}}</span></a>
+            {{else}}
+            <a class="nav nav-prev"></a>
             {{end}}
-            {{with ($.Scratch.Get "nextPage")}}
+            {{with .PrevInSection}}
             <a class="nav nav-next" href="{{.Permalink }}" aria-label="Previous page" > <span class="d-none d-md-block">{{.Title}}</span><i class="ti-arrow-right ml-2"></i></a>
+            {{else}}
+            <a class="nav nav-prev"></a>
             {{end}}
             {{ end }}
           </nav>
