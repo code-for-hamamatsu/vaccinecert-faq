@@ -23,8 +23,10 @@
         </div>
       </div> -->
       <div class="col-lg-12">
-        <div class="p-lg-5 p-4 bg-white" id="content">
-          <h2 class="mb-5" id="title">{{ .Title }}</h2>
+        <a href="{{ "/categories/" | relURL }}{{ .Params.categories | urlize }}"  class="px-4 py-5 bg-white shadow d-block match-height">
+          <h5 class="mb-3 mt-0">{{ .Params.categories }}</h5></a>
+        <div class="p-4 bg-white" id="content">
+          <h3 class="mb-5" id="title">{{ .Title }}</h3>
           {{ if .Content }}
           <div class="content">{{.Content}}</div>
           {{ else }}
@@ -34,7 +36,7 @@
             </ul>
           </div>
           {{ end }}
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">{{ if .Params.Lastmod }}Updated on {{ .Lastmod.Format "02 Jan 2006" }}{{ end }}</p>
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">{{ if .Params.Lastmod }}更新日 {{ .Lastmod.Format "2006-01-02" }}{{ end }}</p>
           <nav class="pagination mt-3">
             <!-- Next prev page -->
             {{ $currentNode := . }}
@@ -69,10 +71,10 @@
 
             {{ if ne .Title "全てのカテゴリから検索" }}
             {{with ($.Scratch.Get "prevPage")}}
-            <a class="nav nav-prev" href="{{.Permalink }}" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">{{.Title}}</span></a>
+            <a class="nav nav-prev" href="{{.Permalink }}" aria-label="Previous page" ><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">{{.Params.question_no}}</span></a>
             {{end}}
             {{with ($.Scratch.Get "nextPage")}}
-            <a class="nav nav-next" href="{{.Permalink }}" aria-label="Previous page" > <span class="d-none d-md-block">{{.Title}}</span><i class="ti-arrow-right ml-2"></i></a>
+            <a class="nav nav-next" href="{{.Permalink }}" aria-label="Previous page" > <span class="d-none d-md-block">{{.Params.question_no}}</span><i class="ti-arrow-right ml-2"></i></a>
             {{end}}
             {{ end }}
           </nav>
@@ -93,9 +95,8 @@
 {{ with .File }}{{ $fileUniqueID = .UniqueID }}{{ end }}
 {{ $currentNodeFileUniqueID := "" }}
 {{ with $currentNode.File }}{{ $currentNodeFileUniqueID = .UniqueID }}{{ end }}
-<li data-nav-id="{{.Permalink}}" title="{{.Title}}" class="sidelist
-  {{if eq $fileUniqueID $currentNodeFileUniqueID}}active{{end}}">
-  <a href="{{.Permalink}}">
+<li data-nav-id="{{.Permalink}}" title="{{.Title}}" class="sidelist {{if eq $fileUniqueID $currentNodeFileUniqueID}}active{{end}}">
+  <a href="{{.Permalink}}" class="text-dark mb-0 py-3 px-4 justify-content-between" style="font-size: 20px;">
     {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}}
   </a>
   {{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
