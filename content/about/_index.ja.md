@@ -13,7 +13,7 @@ weight : 99
 FAQの内容はデジタル庁から公開されたオープンデータの内容であり、サイトを運営する有志の意見や見解ではありません。
 
 【参照先オープンデータ】
-- [https://cio.go.jp/sites/default/files/uploads/documents/VaccinecertFAQ.csv](https://cio.go.jp/sites/default/files/uploads/documents/VaccinecertFAQ.csv)
+- <span style="word-wrap: break-word; overflow-wrap: break-word;">[https://cio.go.jp/sites/default/files/uploads/documents/VaccinecertFAQ.csv](https://cio.go.jp/sites/default/files/uploads/documents/VaccinecertFAQ.csv)</span>
 
 本サイトに表示されるFAQの内容についての不明点・疑問点等は、こちらのフォームからデジタル庁にお問い合わせください。
 - [接種証明書アプリに関するお問合せ（デジタル庁）](https://www.digital.go.jp/policies/vaccinecert/contact) 
