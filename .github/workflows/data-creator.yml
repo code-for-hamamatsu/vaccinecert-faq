@@ -22,9 +22,11 @@ jobs:
           python-version: "3.9"
       
       - name: Install dependencies
-        run: pip install -r production/tool/data-converter/requirements.txt
-      - name: Run python script
-        run: python3 -B production/tool/data-converter/main.py > production/data/faq/faq.json
+        run: pip install -r production/tool/data-creator/requirements.txt
+      - name: Run python script (csv2json)
+        run: python3 -B production/tool/data-creator/csv2json.py > production/data/faq/faq.json
+      - name: Run python script (contents-maker)
+        run: python3 -B production/tool/data-creator/contents-maker.py production/data/faq/faq.json production/content
 
       - name: Create Pull Request main
         uses: peter-evans/create-pull-request@v3
