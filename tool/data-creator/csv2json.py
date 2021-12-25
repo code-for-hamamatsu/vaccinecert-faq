@@ -32,9 +32,10 @@ def convert_to_json_data(data_csv):
     for n in range(len(data_csv)):
         keyvalue = {}
         keyvalue = {
-            'No': str(list_no[n]), 
+            'No': convert_no(list_no[n]), 
+            'カテゴリNo': convert_category_no(list_category[n]),
             'カテゴリ名': list_category[n], 
-            'カテゴリ内No': str(list_subno[n]), 
+            'カテゴリ内No': convert_no(list_subno[n]), 
             '質問': list_q[n], 
             '回答': convert_answer(list_a[n]), 
             '更新日': str(list_updated[n])
@@ -42,6 +43,13 @@ def convert_to_json_data(data_csv):
         results_json.append(keyvalue)
         
     return results_json
+
+def convert_category_no(text):
+    no = text[0:text.find('_')]
+    return convert_no(no)
+
+def convert_no(no):
+    return str(no).zfill(3)
 
 def convert_answer(text):
     text = replace_parentheses_enclosing_url_to_halfwidth(text)
