@@ -62,6 +62,10 @@ link = "#"
 
 HasCJKLanguage = true
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
 [languages]
   ################################ Japanese Language ######################
   [Languages.ja]
