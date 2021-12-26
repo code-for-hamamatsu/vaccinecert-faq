@@ -1,6 +1,7 @@
 import sys
 import os
 import json
+import shutil
 
 import logging
 logger = logging.getLogger()
@@ -22,6 +23,8 @@ def main():
         category_template = read_category_template()
         faq_template = read_faq_template()
 
+        remove_target_contents(content_dir_path)
+        
         dict_contents = {}
         for item in json_data:
             create_faq_md(content_dir_path, faq_template, item)
@@ -62,6 +65,14 @@ def faq_md_file_name(item):
 
 def category_md_file_name(item):
     return 'categories/{0}.ja.md'.format(item['カテゴリNo'])
+    
+def remove_target_contents(content_dir_path):
+    remove_dir_all(os.path.join(content_dir_path, 'categories/'))
+    remove_dir_all(os.path.join(content_dir_path, 'faq/'))
+    
+def remove_dir_all(path):
+    if os.path.exists(path):
+        shutil.rmtree(path)
 
 def read_faq_template():
     return read_template('template/faq.md')
