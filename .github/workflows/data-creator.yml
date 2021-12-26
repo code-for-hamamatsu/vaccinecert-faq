@@ -1,0 +1,40 @@
+# This is a workflow to create json from opendata(csv) and deploy with Actions
+
+name: csv2json and deploy
+env:
+  TZ: Asia/Tokyo
+on:
+  schedule:
+    - cron:  '00 */3 * * *'
+  workflow_dispatch:
+jobs:
+  update_data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: main
+          path: production
+
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+      
+      - name: Install dependencies
+        run: pip install -r production/tool/data-creator/requirements.txt
+      - name: Run python script (csv2json)
+        run: python3 -B production/tool/data-creator/csv2json.py > production/data/faq/faq.json
+      - name: Run python script (contents-maker)
+        run: python3 -B production/tool/data-creator/contents-maker.py production/data/faq/faq.json production/content
+
+      - name: Create Pull Request main
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: production
+          commit-message: BOT; UPDATE DATA
+          title: BOT; UPDATE DATA to main
+          base: main
+          branch: data-bot/main
+          labels: auto_merge
