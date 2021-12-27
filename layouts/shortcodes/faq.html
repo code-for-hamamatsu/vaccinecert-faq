@@ -10,9 +10,25 @@
         最終更新日：{{ slicestr $faq.更新日 0 4 }}年{{ slicestr $faq.更新日 4 6 | strings.TrimLeft "0" }}月{{ slicestr $faq.更新日 6 | strings.TrimLeft "0" }}日&nbsp;
       {{ end}}
     </div>
+    <br/>
     <div class="card-footer rounded-0 bg-white border p-0 border-0" style="text-align: left; margin-bottom: 0px; margin-left: 24px;">
-        <a href="/categories/{{ $faq.カテゴリNo }}" style="color: {{$.Site.Params.primary_color}};"><< {{$faq.カテゴリ名}}</a>
+        <a id="back" href="/categories/{{ $faq.カテゴリNo }}" style="color: {{$.Site.Params.primary_color}};"><< {{$faq.カテゴリ名}}</a>
     </div>
   </div>
 </div>
 {{ end }}
+
+<script>
+  function replaceBackLink() {
+    var url = new URL(window.location.href);
+    var params = url.searchParams;
+    // 検索結果からの遷移の場合はリンクを history.back(); に変更
+    if (params.has("back") && params.get("back") == "search") {
+      $("#back").attr("href", "javascript:history.back();");
+      $("#back").text("<< 検索結果");
+    }
+  }
+  window.addEventListener("load", (event) => {
+    replaceBackLink();
+  });
+</script>
