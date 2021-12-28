@@ -15,7 +15,15 @@
       {{ end}}
     </div>
     <div class="card-footer rounded-0 bg-white border p-0 border-0" style="text-align: right; margin-bottom: 0px; margin-right: 24px;">
-        <a href="/faq/{{ $faq.No }}/" style="color: {{$.Site.Params.primary_color}};">>></a>
+        {{ range $.Site.Params.social }}
+        {{ if eq .name "Twitter" }}
+          {{ $q := printf "url=%s&text=%s\n%s\n%s" ((path.Join "/faq" $faq.No) | absURL) .text .hashtags $faq.質問}}
+          <a class="text-color d-inline-block p-2" href="{{ printf "%s%s" (.link | safeURL) $q }}" aria-label="{{ .name }}"><i class="{{ .icon }}"></i></a>
+        {{ else if eq .name "Facebook"}}
+          {{ $q := printf "u=%s" ((path.Join "/faq" $faq.No) | absURL | safeURL) }}
+          <a class="text-color d-inline-block p-2" href="{{ printf "%s%s" (.link | safeURL) $q }}" aria-label="{{ .name }}"><i class="{{ .icon }}"></i></a>    
+        {{ end }}
+        {{ end }}
     </div>
   </div>
   {{ .Inner }}

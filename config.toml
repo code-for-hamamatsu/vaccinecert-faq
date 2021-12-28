@@ -48,17 +48,16 @@ contact_form_action = "#" # contact form works with : https://formspree.io
 [[params.social]]
 icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
 name = "Facebook"
-link = "#"
+link = "https://www.facebook.com/sharer/sharer.php?"
+text = ""
+hashtags = ""
 
 [[params.social]]
 icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
 name = "Twitter"
-link = "#"
-  
-[[params.social]]
-icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
-name = "Github"
-link = "#"
+link = "https://twitter.com/intent/tweet?"
+text = "新型コロナワクチン接種証明書アプリのFAQサイトにこんな質問がありました。\n"
+hashtags = "%23接種証明書アプリ %23vaccinecert-faq %0A"
 
 HasCJKLanguage = true
 
