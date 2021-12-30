@@ -57,7 +57,7 @@ icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
 name = "Twitter"
 link = "https://twitter.com/intent/tweet?"
 text = "新型コロナワクチン接種証明書アプリのFAQサイトにこんな質問がありました。\n"
-hashtags = "%23接種証明書アプリ %23vaccinecert-faq %0A"
+hashtags = "%23接種証明書アプリ %23ワクチン接種証明書アプリ %23vaccinecertfaq %0A"
 
 HasCJKLanguage = true
 
