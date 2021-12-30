@@ -39,10 +39,7 @@
           alert("クリップボードにコピーできませんでした");return false;
       }
       navigator.clipboard.writeText(text).then(
-          ()=>{
-            const toast = document.getElementById("myToast");
-            toast.toast("show");
-          },
+          ()=>{},
           ()=>alert("クリップボードにコピーできませんでした")
       );
       return true;
