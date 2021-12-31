@@ -2,7 +2,7 @@
 defaultContentLanguage = "ja"
 
 # provide your domain here
-baseURL = "https://code-for-hamamatsu.github.io/vaccinecert-faq/"
+baseURL = "http://localhost:1313/"
 # theme
 theme = "dot-hugo"
 # site title
