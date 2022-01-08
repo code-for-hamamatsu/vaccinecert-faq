@@ -39,6 +39,17 @@
         {{ end }}
       {{ end }}
     </div>
+    {{ range $sim_array := (where $.Site.Data.faq.similarity "No" $faq.No) }}
+    <div class="card-footer rounded-0 bg-white border p-0 border-0" style="text-align: left; margin-bottom: 0px; margin-left: 20px; margin-right: 20px;">
+      関連する質問：<br/>
+        {{ range $similarity := $sim_array.類似質問 }}
+            <a href="{{ ((path.Join "/faq" $similarity.No "/?back=similarity") | safeURL) }}">
+              ・{{ $similarity.質問 }}
+            </a>
+            <br/>
+        {{ end }}
+    </div>
+    {{ end }}
     <br/>
   </div>
   {{ .Inner }}
