@@ -35,6 +35,18 @@
         {{ end }}
       {{ end }}
     </div>
+    {{ range $sim_array := (where $.Site.Data.faq.similarity "No" $faq.No) }}
+    <div class="card-footer rounded-0 bg-white border p-0 border-0" style="text-align: left; margin-bottom: 0px; margin-left: 20px; margin-right: 20px;">
+      関連する質問：<br/>
+        {{ range $similarity := $sim_array.類似質問 }}
+            <a href="{{ ((path.Join "/faq" $similarity.No "/?back=similarity") | safeURL) }}">
+              ・{{ $similarity.質問 }}
+            </a>
+            <br/>
+        {{ end }}
+      <br/>
+    </div>
+    {{ end }}
     <div class="card-footer rounded-0 bg-white border p-0 border-0" style="text-align: left; margin-bottom: 0px; margin-left: 24px;">
       <a id="back" href="/categories/{{ $faq.カテゴリNo }}/" style="color: {{$.Site.Params.primary_color}};"><< {{$faq.カテゴリ名}}</a>
     </div>
@@ -46,6 +58,11 @@
   function replaceBackLink() {
     var url = new URL(window.location.href);
     var params = url.searchParams;
+    // 類似質問リンクによる遷移の場合はリンクを history.back(); に変更
+    if (params.has("back") && params.get("back") == "similarity") {
+      $("#back").attr("href", "javascript:history.back();");
+      $("#back").text("<< 戻る");
+    }
     // 検索結果からの遷移の場合はリンクを history.back(); に変更
     if (params.has("back") && params.get("back") == "search") {
       $("#back").attr("href", "javascript:history.back();");
