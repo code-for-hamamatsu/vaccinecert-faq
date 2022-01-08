@@ -21,10 +21,21 @@ jobs:
         with:
           python-version: "3.9"
       
+      - name: Install packages
+        run: sudo apt-get install -y mecab libmecab-dev mecab-ipadic-utf8
+      - name: Get MeCab dictionary
+        run: git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
+      - name: Setup MeCab dictionary
+        run: ./bin/install-mecab-ipadic-neologd -n -y
+        working-directory: ./mecab-ipadic-neologd
+      - name: Setup MeCab configure
+        run: echo dicdir = `mecab-config --dicdir`"/mecab-ipadic-neologd" > mecabrc && sudo cp mecabrc /usr/local/etc/
       - name: Install dependencies
         run: pip install -r production/tool/data-creator/requirements.txt
       - name: Run python script (csv2json)
         run: python3 -B production/tool/data-creator/csv2json.py > production/data/faq/faq.json
+      - name: Run python script (qa-similarity)
+        run: python3 -B production/tool/data-creator/qa-similarity.py production/data/faq/faq.json 3 > production/data/faq/similarity.json
       - name: Run python script (contents-maker)
         run: python3 -B production/tool/data-creator/contents-maker.py production/data/faq/faq.json production/content
 
