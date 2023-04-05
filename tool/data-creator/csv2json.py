@@ -17,7 +17,10 @@ CSV_ADDRESS = 'https://cio.go.jp/sites/default/files/uploads/documents/Vaccinece
 @retry(tries=3, delay=1)
 def get_csv_data(csv_address):
     res = requests.get(csv_address).content
-    data = pd.read_csv(io.StringIO(res.decode("utf-8")), header=None, sep=",", engine="python")
+    try:
+        data = pd.read_csv(io.StringIO(res.decode("utf-8")), header=None, sep=",", engine="python")
+    except Exception:
+        data = pd.read_csv(io.StringIO(res.decode("shift_jis")), header=None, sep=",", engine="python")
     return data
     
 def convert_to_json_data(data_csv):
