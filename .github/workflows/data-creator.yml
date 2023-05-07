@@ -4,8 +4,6 @@ name: csv2json and deploy
 env:
   TZ: Asia/Tokyo
 on:
-  schedule:
-    - cron:  '00 */3 * * *'
   workflow_dispatch:
 jobs:
   update_data:
